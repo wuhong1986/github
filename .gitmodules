@@ -34,3 +34,54 @@
 [submodule "bootstrap/twitter-bootstrap-typeahead"]
 	path = bootstrap/twitter-bootstrap-typeahead
 	url = https://github.com/tcrosen/twitter-bootstrap-typeahead
+[submodule "c/C-Buffered-tree"]
+	path = c/C-Buffered-tree
+	url = https://github.com/yuyuyu101/C-Buffered-tree
+[submodule "network/libuv"]
+	path = network/libuv
+	url = https://github.com/joyent/libuv
+[submodule "network/Libevent"]
+	path = network/Libevent
+	url = https://github.com/nmathewson/Libevent
+[submodule "c/strsplit.c"]
+	path = c/strsplit.c
+	url = https://github.com/jwerle/strsplit.c
+[submodule "c/strndup"]
+	path = c/strndup
+	url = https://github.com/clibs/strndup
+[submodule "c/strdup"]
+	path = c/strdup
+	url = https://github.com/clibs/strdup
+[submodule "c/trim.c"]
+	path = c/trim.c
+	url = https://github.com/stephenmathieson/trim.c
+[submodule "c/substr.c"]
+	path = c/substr.c
+	url = https://github.com/stephenmathieson/substr.c
+[submodule "c/str-starts-with.c"]
+	path = c/str-starts-with.c
+	url = https://github.com/stephenmathieson/str-starts-with.c
+[submodule "c/str-replace.c"]
+	path = c/str-replace.c
+	url = https://github.com/stephenmathieson/str-replace.c
+[submodule "c/str-flatten.c"]
+	path = c/str-flatten.c
+	url = https://github.com/stephenmathieson/str-flatten.c
+[submodule "c/str-ends-with.c"]
+	path = c/str-ends-with.c
+	url = https://github.com/stephenmathieson/str-ends-with.c
+[submodule "c/wildcardcmp"]
+	path = c/wildcardcmp
+	url = https://github.com/clibs/wildcardcmp
+[submodule "c/occurrences.c"]
+	path = c/occurrences.c
+	url = https://github.com/stephenmathieson/occurrences.c
+[submodule "c/clibs"]
+	path = c/clibs
+	url = https://github.com/BurntSushi/clibs
+[submodule "c/libCello"]
+	path = c/libCello
+	url = https://github.com/orangeduck/libCello
+[submodule "c/ex_string"]
+	path = c/ex_string
+	url = https://github.com/wuhong1986/ex_string.git
