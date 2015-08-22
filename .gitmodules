@@ -1,0 +1,36 @@
+[submodule "bootstrap/bootstrap-treeview"]
+	path = bootstrap/bootstrap-treeview
+	url = https://github.com/jonmiles/bootstrap-treeview
+[submodule "bootstrap/bootstrap-switch"]
+	path = bootstrap/bootstrap-switch
+	url = https://github.com/nostalgiaz/bootstrap-switch
+[submodule "bootstrap/bootstrap-table-examples"]
+	path = bootstrap/bootstrap-table-examples
+	url = https://github.com/wenzhixin/bootstrap-table-examples
+[submodule "bootstrap/bootstrap-table"]
+	path = bootstrap/bootstrap-table
+	url = https://github.com/wenzhixin/bootstrap-table.git
+[submodule "bootstrap/multiple-select"]
+	path = bootstrap/multiple-select
+	url = https://github.com/wenzhixin/multiple-select.git
+[submodule "bootstrap/bootstrap-modal"]
+	path = bootstrap/bootstrap-modal
+	url = https://github.com/jschr/bootstrap-modal
+[submodule "bootstrap/bootstrap-select"]
+	path = bootstrap/bootstrap-select
+	url = https://github.com/silviomoreto/bootstrap-select
+[submodule "bootstrap/bootstrap"]
+	path = bootstrap/bootstrap
+	url = https://github.com/twbs/bootstrap
+[submodule "bootstrap/x-editable"]
+	path = bootstrap/x-editable
+	url = https://github.com/vitalets/x-editable
+[submodule "bootstrap/bootstrap-datetimepicker"]
+	path = bootstrap/bootstrap-datetimepicker
+	url = https://github.com/Eonasdan/bootstrap-datetimepicker
+[submodule "bootstrap/bootstrap-hover-dropdown"]
+	path = bootstrap/bootstrap-hover-dropdown
+	url = https://github.com/CWSpear/bootstrap-hover-dropdown
+[submodule "bootstrap/twitter-bootstrap-typeahead"]
+	path = bootstrap/twitter-bootstrap-typeahead
+	url = https://github.com/tcrosen/twitter-bootstrap-typeahead
