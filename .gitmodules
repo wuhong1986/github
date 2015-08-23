@@ -85,3 +85,21 @@
 [submodule "c/ex_string"]
 	path = c/ex_string
 	url = https://github.com/wuhong1986/ex_string.git
+[submodule "c/mkdirp.c"]
+	path = c/mkdirp.c
+	url = https://github.com/stephenmathieson/mkdirp.c
+[submodule "c/path-normalize.c"]
+	path = c/path-normalize.c
+	url = https://github.com/stephenmathieson/path-normalize.c
+[submodule "c/path-join.c"]
+	path = c/path-join.c
+	url = https://github.com/stephenmathieson/path-join.c
+[submodule "c/path-basename.c"]
+	path = c/path-basename.c
+	url = https://github.com/michaelrhodes/path-basename.c
+[submodule "c/ex_clib"]
+	path = c/ex_clib
+	url = https://github.com/wuhong1986/ex_clib.git
+[submodule "c/ex_file.c"]
+	path = c/ex_file.c
+	url = https://github.com/wuhong1986/ex_file.c.git
