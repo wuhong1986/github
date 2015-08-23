@@ -103,3 +103,9 @@
 [submodule "c/ex_file.c"]
 	path = c/ex_file.c
 	url = https://github.com/wuhong1986/ex_file.c.git
+[submodule "nosql/hiredis"]
+	path = nosql/hiredis
+	url = https://github.com/redis/hiredis
+[submodule "nosql/redis-tools"]
+	path = nosql/redis-tools
+	url = https://github.com/antirez/redis-tools
