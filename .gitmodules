@@ -109,3 +109,15 @@
 [submodule "nosql/redis-tools"]
 	path = nosql/redis-tools
 	url = https://github.com/antirez/redis-tools
+[submodule "c/murmurhash.c"]
+	path = c/murmurhash.c
+	url = https://github.com/jwerle/murmurhash.c
+[submodule "c/sha1"]
+	path = c/sha1
+	url = https://github.com/clibs/sha1
+[submodule "c/sha256.c"]
+	path = c/sha256.c
+	url = https://github.com/jb55/sha256.c
+[submodule "c/cstl"]
+	path = c/cstl
+	url = https://wuhong1986@github.com/wuhong1986/cstl
