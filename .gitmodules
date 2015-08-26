@@ -121,6 +121,21 @@
 [submodule "c/cstl"]
 	path = c/cstl
 	url = https://wuhong1986@github.com/wuhong1986/cstl
+[submodule "c/commander"]
+	path = c/commander
+	url = https://github.com/clibs/commander
+[submodule "c/term"]
+	path = c/term
+	url = https://github.com/clibs/term
+[submodule "c/inih"]
+	path = c/inih
+	url = https://github.com/clibs/inih
+[submodule "c/usleep.h"]
+	path = c/usleep.h
+	url = https://github.com/jwerle/usleep.h
 [submodule "c/rotate-bits.h"]
 	path = c/rotate-bits.h
 	url = https://github.com/jb55/rotate-bits.h
+[submodule "c/cutils"]
+	path = c/cutils
+	url = https://wuhong1986@github.com/wuhong1986/cutils
