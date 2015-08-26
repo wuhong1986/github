@@ -121,3 +121,6 @@
 [submodule "c/cstl"]
 	path = c/cstl
 	url = https://wuhong1986@github.com/wuhong1986/cstl
+[submodule "c/rotate-bits.h"]
+	path = c/rotate-bits.h
+	url = https://github.com/jb55/rotate-bits.h
