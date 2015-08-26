@@ -139,3 +139,63 @@
 [submodule "c/cutils"]
 	path = c/cutils
 	url = https://wuhong1986@github.com/wuhong1986/cutils
+[submodule "network/anet.c"]
+	path = network/anet.c
+	url = https://github.com/jb55/anet.c
+[submodule "c/log.h"]
+	path = c/log.h
+	url = https://github.com/thlorenz/log.h
+[submodule "c/array-avl-tree"]
+	path = c/array-avl-tree
+	url = https://github.com/willemt/array-avl-tree
+[submodule "c/http-parser"]
+	path = c/http-parser
+	url = https://github.com/brendanashworth/http-parser
+[submodule "c/zlib"]
+	path = c/zlib
+	url = https://github.com/georgy7/zlib
+[submodule "c/amp"]
+	path = c/amp
+	url = https://github.com/clibs/amp
+[submodule "c/endian.h"]
+	path = c/endian.h
+	url = https://github.com/mikepb/endian.h
+[submodule "c/red-black-tree"]
+	path = c/red-black-tree
+	url = https://github.com/clibs/red-black-tree
+[submodule "nosql/redis-py"]
+	path = nosql/redis-py
+	url = https://github.com/andymccurdy/redis-py
+[submodule "javascript/jquery-validation"]
+	path = javascript/jquery-validation
+	url = https://github.com/jzaefferer/jquery-validation
+[submodule "c/threadpool"]
+	path = c/threadpool
+	url = https://github.com/jlcordeiro/threadpool
+[submodule "c/timestamp"]
+	path = c/timestamp
+	url = https://github.com/clibs/timestamp
+[submodule "c/timer"]
+	path = c/timer
+	url = https://github.com/clibs/timer
+[submodule "c/event-timer"]
+	path = c/event-timer
+	url = https://github.com/willemt/event-timer
+[submodule "javascript/jquery"]
+	path = javascript/jquery
+	url = git://github.com/jquery/jquery.git
+[submodule "network/protobuf"]
+	path = network/protobuf
+	url = https://github.com/google/protobuf
+[submodule "nosql/redis"]
+	path = nosql/redis
+	url = https://github.com/antirez/redis
+[submodule "c/tinyxml2"]
+	path = c/tinyxml2
+	url = https://github.com/leethomason/tinyxml2
+[submodule "php/CodeIgniter"]
+	path = php/CodeIgniter
+	url = https://github.com/bcit-ci/CodeIgniter
+[submodule "python/python"]
+	path = python/python
+	url = https://github.com/python-git/python
