@@ -199,3 +199,24 @@
 [submodule "python/python"]
 	path = python/python
 	url = https://github.com/python-git/python
+[submodule "google/ReplaceGoogleCDN"]
+	path = google/ReplaceGoogleCDN
+	url = https://github.com/justjavac/ReplaceGoogleCDN
+[submodule "google/ngx_http_google_filter_module"]
+	path = google/ngx_http_google_filter_module
+	url = https://github.com/cuber/ngx_http_google_filter_module
+[submodule "books/free-programming-books"]
+	path = books/free-programming-books
+	url = https://github.com/vhf/free-programming-books
+[submodule "books/The-Art-Of-Programming-By-July"]
+	path = books/The-Art-Of-Programming-By-July
+	url = https://github.com/julycoding/The-Art-Of-Programming-By-July
+[submodule "nginx-book"]
+	path = nginx/nginx-book
+	url = https://github.com/taobao/nginx-book
+[submodule "nginx/nginx-book"]
+	path = nginx/nginx-book
+	url = https://github.com/taobao/nginx-book
+[submodule "nginx/nginx"]
+	path = nginx/nginx
+	url = https://github.com/nginx/nginx
