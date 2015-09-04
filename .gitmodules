@@ -211,9 +211,6 @@
 [submodule "books/The-Art-Of-Programming-By-July"]
 	path = books/The-Art-Of-Programming-By-July
 	url = https://github.com/julycoding/The-Art-Of-Programming-By-July
-[submodule "nginx-book"]
-	path = nginx/nginx-book
-	url = https://github.com/taobao/nginx-book
 [submodule "nginx/nginx-book"]
 	path = nginx/nginx-book
 	url = https://github.com/taobao/nginx-book
