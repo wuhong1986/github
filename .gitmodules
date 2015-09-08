@@ -217,3 +217,15 @@
 [submodule "nginx/nginx"]
 	path = nginx/nginx
 	url = https://github.com/nginx/nginx
+[submodule "cpp/jsoncpp"]
+	path = cpp/jsoncpp
+	url = https://github.com/open-source-parsers/jsoncpp
+[submodule "cpp/ArduinoJson"]
+	path = cpp/ArduinoJson
+	url = https://github.com/bblanchon/ArduinoJson
+[submodule "cpp/json"]
+	path = cpp/json
+	url = https://github.com/nlohmann/json
+[submodule "cpp/jsonnet"]
+	path = cpp/jsonnet
+	url = https://github.com/google/jsonnet
