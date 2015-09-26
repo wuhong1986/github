@@ -1,137 +1,6 @@
 $(document).ready(function() {
     var isMobile, doUIStyleClear, doUIStyleBlack, doUIStyleBlue, doUIStyleSwitch, doUIStyleLoader, __oq, __hl, __pos, __resultBox, __ajaxThread, __ajaxDelay, __ajaxTimer, __ajaxSearchThread, __ajaxSearchThreadError, __ajaxSearchTimer, __ajaxSearchTimeout, __ajaxStartTime, __progressIntervalPercent, __progressInterval, __isThreadAbort, __isCaptchaRead, __isCaptchaSubmit, __imageSearch, __imageSearching, __imageSearchStart, __title, __setUrlAndParse, getParamFromURL, doImageClickEvent, doImagePreloading, doImageVisibleLoading, doCreateResultBox, doParseComplete, doParseResult, doParseSyncAbuse, doCaptShow, doUseBackupSearchEngine, doAjaxStop, doAjax, doSearch, doShowPageMain, doSearchByImageUpload, doSearchByImageDrop, doInitSearchByImageBox, doSwitchTab, doParseUrl, __currPage, doCNZZPageView, setUrl, doCreateUrl, cnzzTrackEvent;
-    $.cookie = function(a, b, c) {
-        var d, e, f, g, h, i, j, k, l;
-        if ("undefined" == typeof b) {
-            if (i = null, document.cookie && "" != document.cookie)
-                for (j = document.cookie.split(";"), k = 0; k < j.length; k++)
-                    if (l = j[k].replace(/(^\s*)|(\s*$)/g, ""), l.substring(0, a.length + 1) == a + "=") {
-                        i = decodeURIComponent(l.substring(a.length + 1));
-                        break
-                    }
-            return i
-        }
-        c = c || {}, null === b && (b = "", c = $.extend({}, c), c.expires = -1), d = "", c.expires && ("number" == typeof c.expires || c.expires.toUTCString) && ("number" == typeof c.expires ? (e = new Date, e.setTime(e.getTime() + 1e3 * 60 * 60 * 24 * c.expires)) : e = c.expires, d = "; expires=" + e.toUTCString()), f = c.path ? "; path=" + c.path : "", g = c.domain ? "; domain=" + c.domain : "", h = c.secure ? "; secure" : "", document.cookie = [a, "=", b, d, f, g, h].join("")
-    }, $.cookie("PREF", "", {
-        expires: -1,
-        path: "/",
-        domain: ".googto.com"
-    }), $.cookie("GOOGLE_ABUSE_EXEMPTION", "", {
-        expires: -1,
-        path: "/",
-        domain: ".googto.com"
-    }), isMobile = {
-        Android: function() {
-            return navigator.userAgent.match(/Android/i) ? !0 : !1
-        },
-        BlackBerry: function() {
-            return navigator.userAgent.match(/BlackBerry/i) ? !0 : !1
-        },
-        iOS: function() {
-            return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? !0 : !1
-        },
-        Windows: function() {
-            return navigator.userAgent.match(/IEMobile/i) ? !0 : !1
-        },
-        any: function() {
-            return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows()
-        }
-    }, $(".ui.dropdown").dropdown(), $(".ui.checkbox").checkbox(), $(".searching.progress").progress({
-        label: !1,
-        onChange: function() {}
-    }), doUIStyleClear = function() {
-        $(".ui.main.menu").removeClass("inverted").css("background-color", ""), $(".ui.page-footer").removeClass("inverted").css("background-color", ""), $(".ui.submit.button").not(".basic").removeClass("black").removeClass("blue"), $(".search-related .ui.label").removeClass("black").removeClass("blue"), $(".search-wiki-button").removeClass("black").removeClass("blue"), $(".ui.sbi.button").removeClass("black").removeClass("blue"), $(".extra .ui.button").removeClass("black").removeClass("blue"), $(".page-footer .ui.label").removeClass("blue"), $(".ui.animated.button").removeClass("secondary").hover(function() {
-            $(this).css("background-color", ""), $(this).css("color", "")
-        }, function() {
-            $(this).css("background-color", ""), $(this).css("color", "")
-        }).css({
-            "background-color": "",
-            color: ""
-        }), $(".popup").attr("data-variation", "wide")
-    }, doUIStyleBlack = function() {
-        $(".ui.main.menu").addClass("inverted"), $(".ui.animated.button").addClass("secondary"), $(".ui.submit.button").not(".basic").addClass("black"), $(".ui.page-footer").addClass("inverted"), $(".search-related .ui.label").addClass("black"), $(".search-wiki-button").addClass("black"), $(".ui.sbi.button").addClass("black"), $(".extra .ui.button").addClass("black"), $(".popup").attr("data-variation", "inverted wide")
-    }, doUIStyleBlue = function() {
-        $(".ui.main.menu").css("background-color", "#3b83c0"), $(".ui.page-footer").css("background-color", "#e5e5e5"), $(".ui.submit.button").not(".basic").addClass("blue"), $(".search-related .ui.label").addClass("blue"), $(".page-footer .ui.label").addClass("blue"), $(".search-wiki-button").addClass("blue"), $(".ui.sbi.button").addClass("blue"), $(".extra .ui.button").addClass("blue"), $(".ui.animated.button").hover(function() {
-            $(this).css("background-color", "#3b83c0"), $(this).css("color", "#eeeeee")
-        }, function() {
-            $(this).css("background-color", "#3b83c0"), $(this).css("color", "#eeeeee")
-        }).css({
-            "background-color": "#3b83c0",
-            color: "#eeeeee"
-        })
-    }, doUIStyleSwitch = function(a) {
-        switch (doUIStyleClear(), a || (a = "Blue"), $(".google-logo").removeClass().addClass("google-logo").addClass(a.toLowerCase()), $(".google-logo-small").removeClass().addClass("google-logo-small").addClass("gohome").addClass(a.toLowerCase()), a) {
-            case "Blue":
-                doUIStyleBlue();
-                break;
-            default:
-                doUIStyleBlack()
-        }
-        $(".popup").popup(), $("body").show()
-    }, doUIStyleLoader = function() {
-        doUIStyleSwitch($.cookie("uistyle")), $(".settings-menu .ui.circular.label").each(function() {
-            $(this).parent().click(function() {
-                $.cookie("uistyle", $(this).attr("data-style"), {
-                    expires: 365,
-                    path: "/",
-                    domain: document.domain
-                }), doUIStyleSwitch($(this).attr("data-style"))
-            })
-        }), $(".settings-menu .https").each(function() {
-            var c = $(this);
-            $(this).parent().click(function() {
-                var b = document.domain + window.location.pathname + window.location.search;
-                b = c.hasClass("lock") ? "https://" + b : "http://" + b, location.href = b
-            })
-        }), $(".settings-menu .safeoff").click(function() {
-            __hl = "en", $.cookie("safesearch", "off", {
-                expires: 365,
-                path: "/",
-                domain: document.domain
-            }), setUrl(window.location.search)
-        }), $(".settings-menu .safeon").click(function() {
-            __hl = "zh-CN", $.cookie("safesearch", "on", {
-                expires: 365,
-                path: "/",
-                domain: document.domain
-            }), setUrl(window.location.search)
-        })
-    }, doUIStyleLoader(), __oq = !1, __hl = "zh-CN", __pos = !1, __resultBox = !1, __ajaxThread = !1, __ajaxDelay = 300, __ajaxTimer = !1, __ajaxSearchThread = new Array, __ajaxSearchThreadError = 0, __ajaxSearchTimer = !1, __ajaxSearchTimeout = 5e3, __ajaxStartTime = 0, __progressIntervalPercent = 0, __progressInterval = !1, __isThreadAbort = !1, __isCaptchaRead = !1, __isCaptchaSubmit = !1, __imageSearch = !1, __imageSearching = !1, __imageSearchStart = 0, __title = document.title, __setUrlAndParse = !0, "off" === $.cookie("safesearch") && (__hl = "en"), getParamFromURL = function(a, b) {
-        var c = a.substr(a.indexOf("?") + 1).split("&"),
-            d = 0;
-        return $.each(c, function(a, c) {
-            0 === c.indexOf(b + "=") && (d = c.replace(b + "=", ""))
-        }), d
-    }, doImageClickEvent = function() {
-        var e, f, g, h, i, j, k, b = $(this).parent(),
-            c = parseInt(b.offset().top),
-            d = 0;
-        do b = b.next(), d = b.hasClass("rg_di") ? parseInt(b.offset().top) : c; while (c === d);
-        return $(".ImagePreviewBox").remove(), e = $(this).children("img"), f = $('.rg_meta[name="' + e.attr("name") + '"]'), g = JSON.parse(f.html()), h = $("<a></a>"), h.text(g.isu), h.attr("href", e.attr("data-imgrefurl")), h.attr("target", "_blank"), i = $(".ImagePreviewBoxTemplate").children().clone(), i.addClass("ImagePreviewBox"), i.find("img").attr("src", g.tu), i.find("img").css("oh", g.oh), i.find("img").css("width", g.ow), i.find("img").parent().attr("href", e.attr("data-imgurl")), i.find(".header").html(g.pt), i.find(".meta").html(h), i.find(".meta").append(" - " + g.is + " - " + g.os), i.find(".description").html(g.s), i.find(".view-page").parent().attr("href", e.attr("data-imgrefurl")), i.find(".view-image").parent().attr("href", e.attr("data-imgurl")), j = $("<img />").attr("src", e.attr("data-imgurl")), j.load(function() {
-            i.find("img").attr("src", e.attr("data-imgurl"))
-        }), b.before(i), k = i.offset().top - (parseInt($(window).height()) / 2 - parseInt(i.outerHeight()) / 2), $("html, body").animate({
-            scrollTop: k
-        }, 100), !1
-    }, doImagePreloading = function() {
-        if ($("img.rg_i[data-src]").not("[src]").length > 0) {
-            var a = parseInt($(window).width());
-            $(".rg_meta").not("[name]").each(function() {
-                var g, h, i, d = JSON.parse($(this).html()),
-                    e = d.id;
-                d.tu, g = d.tw, h = d.th, g > a - 60 && (g = a - 60), i = $('img.rg_i[name="' + e + '"]'), void 0 == i.attr("src") && i.css("width", g + "px").css("height", h + "px"), $(this).attr("name", i.attr("name")), i.attr("data-imgurl", getParamFromURL(i.parent().attr("href"), "imgurl")), i.attr("data-imgrefurl", getParamFromURL(i.parent().attr("href"), "imgrefurl")), i.parent().click(doImageClickEvent)
-            })
-        }
-        doImageVisibleLoading(), __imageSearching = !1
-    }, doImageVisibleLoading = function() {
-        var a = parseInt($(window).height()),
-            b = parseInt($(this).scrollTop()),
-            c = $("img.rg_i[data-src]").not("[src]");
-        c.each(function() {
-            a + b >= $(this).offset().top && $(this).attr("src", $(this).attr("data-src"))
-        }), __imageSearching === !1 && 0 === c.length && $("img.rg_i[data-src]").length > 0 && (__imageSearching = !0, __imageSearchStart += 100, url = doCreateUrl("", {
-            start: __imageSearchStart
-        }), setUrl(url))
-    }, doCreateResultBox = function(a) {
+    doCreateResultBox = function(a) {
         var b, c, d, e;
         __resultBox === !1 ? (__resultBox = $('<div id="__resultBox" class="ui compact stacked segment vertical selection list"></div>'), __resultBox.hide(), __resultBox.appendTo($("body"))) : __resultBox = $("#__resultBox"), b = a.offset().top, c = a.offset().left, d = a.outerHeight(), e = a.outerWidth(), isMobile.any() && (e = a.parent().width()), __resultBox.css({
             zIndex: "10",
@@ -656,10 +525,15 @@ $(document).ready(function() {
                     l = m[1]
             }
         }), a.length > 0 && (c = a), b["start"] >= 0 && (d = b["start"]), b["sbi"] && (e = b["sbi"]), b["lr"] && (f = b["lr"]), b["qdr"] && (g = b["qdr"]), b["num"] && (h = b["num"]), b["li"] && (i = b["li"]), b["filter"] && (j = b["filter"]), b["occt"] && (k = b["occt"]), b["filetype"] && (l = b["filetype"]), "none" === b["lr"] && (f = ""), "none" === b["qdr"] && (g = ""), "none" === b["num"] && (h = ""), "none" === b["li"] && (i = ""), "none" === b["filter"] && (j = ""), "none" === b["occt"] && (k = ""), "none" === b["filetype"] && (l = ""), c === !1 ? "" : (m = __imageSearch ? "/?tab=image&q=" + c : "/?q=" + c, d > 0 && (m += "&start=" + d), e.length > 0 && (m += "&sbi=" + e), f.length > 0 && (m += "&lr=" + f), g.length > 0 && (m += "&qdr=" + g), h.length > 0 && (m += "&num=" + h), i.length > 0 && (m += "&li=" + i), j.length > 0 && (m += "&filter=" + j), k.length > 0 && (m += "&occt=" + k), l.length > 0 && (m += "&filetype=" + l), m)
-    }, $(".submit").click(function() {
+    }, 
+    
+    /* 响应点击search 按钮事件 */
+    $(".submit").click(function() {
         var c, b = $(this).parent().children("input").val();
         b.length > 0 && (c = __imageSearch ? "/?tab=image&q=" + encodeURIComponent(b) : "/?q=" + encodeURIComponent(b), setUrl(c))
-    }), $("input[type=radio]").change(function() {
+    }), 
+    
+    $("input[type=radio]").change(function() {
         var b;
         switch ($(this).attr("name")) {
             case "li":
