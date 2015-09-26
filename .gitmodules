@@ -235,3 +235,12 @@
 [submodule "javascript/cryptico"]
 	path = javascript/cryptico
 	url = https://github.com/wwwtyro/cryptico
+[submodule "c/json-c"]
+	path = c/json-c
+	url = https://github.com/json-c/json-c
+[submodule "c/json-parser"]
+	path = c/json-parser
+	url = https://github.com/udp/json-parser
+[submodule "c/cJSONFiles"]
+	path = c/cJSONFiles
+	url = https://github.com/ysboss/cJSONFiles
