@@ -244,3 +244,18 @@
 [submodule "c/cJSONFiles"]
 	path = c/cJSONFiles
 	url = https://github.com/ysboss/cJSONFiles
+[submodule "javascript/loading"]
+	path = javascript/loading
+	url = https://github.com/jxnblk/loading
+[submodule "php/html-parser"]
+	path = php/html-parser
+	url = https://github.com/bupt1987/html-parser
+[submodule "php/php-html-parser"]
+	path = php/php-html-parser
+	url = https://github.com/paquettg/php-html-parser
+[submodule "javascript/zlib.js"]
+	path = javascript/zlib.js
+	url = https://github.com/imaya/zlib.js
+[submodule "javascript/pako"]
+	path = javascript/pako
+	url = https://github.com/nodeca/pako
