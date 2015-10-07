@@ -259,3 +259,6 @@
 [submodule "javascript/pako"]
 	path = javascript/pako
 	url = https://github.com/nodeca/pako
+[submodule "javascript/js-cookie"]
+	path = javascript/js-cookie
+	url = https://github.com/js-cookie/js-cookie
