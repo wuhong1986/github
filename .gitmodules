@@ -262,3 +262,9 @@
 [submodule "javascript/js-cookie"]
 	path = javascript/js-cookie
 	url = https://github.com/js-cookie/js-cookie
+[submodule "c/boa"]
+	path = c/boa
+	url = https://github.com/timmattison/boa
+[submodule "javascript/Add-Clear"]
+	path = javascript/Add-Clear
+	url = https://github.com/skorecky/Add-Clear
