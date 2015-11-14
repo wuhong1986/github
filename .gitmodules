@@ -259,3 +259,6 @@
 [submodule "javascript/pako"]
 	path = javascript/pako
 	url = https://github.com/nodeca/pako
+[submodule "wordpress/wordpress"]
+	path = wordpress/wordpress
+	url = https://github.com/wordpress/wordpress
