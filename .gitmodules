@@ -262,3 +262,6 @@
 [submodule "wordpress/wordpress"]
 	path = wordpress/wordpress
 	url = https://github.com/wordpress/wordpress
+[submodule "javascript/js-cookie"]
+	path = javascript/js-cookie
+	url = https://github.com/js-cookie/js-cookie
