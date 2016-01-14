@@ -271,3 +271,18 @@
 [submodule "javascript/Add-Clear"]
 	path = javascript/Add-Clear
 	url = https://github.com/skorecky/Add-Clear
+[submodule "wechat/wechat-php-sdk"]
+	path = wechat/wechat-php-sdk
+	url = https://github.com/dodgepudding/wechat-php-sdk
+[submodule "php/codeigniter-restserver"]
+	path = php/codeigniter-restserver
+	url = https://github.com/chriskacerguis/codeigniter-restserver
+[submodule "php/codeigniter-restclient"]
+	path = php/codeigniter-restclient
+	url = https://github.com/philsturgeon/codeigniter-restclient
+[submodule "php/CodeIgniter-Bootstrap"]
+	path = php/CodeIgniter-Bootstrap
+	url = https://github.com/sjlu/CodeIgniter-Bootstrap
+[submodule "wechat/weChat"]
+	path = wechat/weChat
+	url = https://github.com/zscorpio/weChat
