@@ -286,3 +286,6 @@
 [submodule "wechat/weChat"]
 	path = wechat/weChat
 	url = https://github.com/zscorpio/weChat
+[submodule "php/PHPExcel"]
+	path = php/PHPExcel
+	url = https://github.com/PHPOffice/PHPExcel
