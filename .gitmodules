@@ -286,3 +286,27 @@
 [submodule "wechat/weChat"]
 	path = wechat/weChat
 	url = https://github.com/zscorpio/weChat
+[submodule "php/GoCart"]
+	path = php/GoCart
+	url = https://github.com/gocart/GoCart
+[submodule "php/predis"]
+	path = php/predis
+	url = https://github.com/nrk/predis
+[submodule "web/html5-boilerplate"]
+	path = web/html5-boilerplate
+	url = https://github.com/h5bp/html5-boilerplate
+[submodule "wechat/weui"]
+	path = wechat/weui
+	url = https://github.com/weui/weui
+[submodule "wechat/jquery-weui"]
+	path = wechat/jquery-weui
+	url = https://github.com/lihongxun945/jquery-weui
+[submodule "web/SUI-Mobile"]
+	path = web/SUI-Mobile
+	url = https://github.com/sdc-alibaba/SUI-Mobile
+[submodule "javascript/qrcodejs"]
+	path = javascript/qrcodejs
+	url = https://github.com/davidshimjs/qrcodejs
+[submodule "bootstrap/startbootstrap-sb-admin-2"]
+	path = bootstrap/startbootstrap-sb-admin-2
+	url = https://github.com/BlackrockDigital/startbootstrap-sb-admin-2
