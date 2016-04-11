@@ -313,3 +313,18 @@
 [submodule "php/PHPExcel"]
 	path = php/PHPExcel
 	url = https://github.com/PHPOffice/PHPExcel
+[submodule "bootstrap/Ajax-Bootstrap-Select"]
+	path = bootstrap/Ajax-Bootstrap-Select
+	url = https://github.com/truckingsim/Ajax-Bootstrap-Select
+[submodule "bootstrap/tableExport.jquery.plugin"]
+	path = bootstrap/tableExport.jquery.plugin
+	url = https://github.com/kayalshri/tableExport.jquery.plugin
+[submodule "bootstrap/toastr"]
+	path = bootstrap/toastr
+	url = https://github.com/CodeSeven/toastr
+[submodule "bootstrap/csv-import"]
+	path = bootstrap/csv-import
+	url = https://github.com/bradstinson/csv-import
+[submodule "bootstrap/bootstrap-datepicker"]
+	path = bootstrap/bootstrap-datepicker
+	url = https://github.com/eternicode/bootstrap-datepicker
